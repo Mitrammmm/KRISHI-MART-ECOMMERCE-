@@ -10,6 +10,7 @@ import Register from './component/user/Register'
 import Dashboard from './component/admin/Dashboard'
 import Contact from './component/Contact'
 import Profile from './component/user/Profile'
+import Favorites from './component/cart/Favourite'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path='/profile' element={<Profile/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/contact' element={<Contact/>}/>
+      <Route path='/favourites' element={<Favorites/>} />
     </Routes>
     <Footer/>
     </>
