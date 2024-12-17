@@ -27,7 +27,7 @@ function Header() {
                     <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div className="navbar-nav mr-auto py-0">
                             <Link className='nav-item nav-link' to='/'>Home</Link>
-                            <Link className="nav-item nav-link" to='/category'>About</Link>
+                            <Link className="nav-item nav-link" to='/about'>About</Link>
                             {/* <Link className='nav-item nav-link active' to='/shop'>Shop</Link> */}
                             {/* <Link className='nav-item nav-link' to='/detail'>Shop Detail</Link> */}
                             <div className="nav-item dropdown">
@@ -35,6 +35,7 @@ function Header() {
                                 <div className="dropdown-menu bg-primary rounded-0 border-0 m-0">
                                     <Link className='dropdown-item' to='/cart'>Cart</Link>
                                     <Link className='dropdown-item' to='/favourites'>Favourites</Link>
+                                    <Link className='dropdown-item' to='/dashboard'>Dashboard</Link>
                                 </div>
                             </div>
                             <div className="nav-item dropdown">
@@ -114,34 +115,8 @@ function Header() {
                 </div>
             </div>
         </div>
+        
         <div className="row align-items-center bg-dark py-3 px-xl-5 d-none d-lg-flex">
-        {/* <div className="col-lg-3 d-none d-lg-block">
-                <Link className="btn d-flex align-items-center justify-content-between bg-primary w-100" data-toggle="collapse" to="#navbar-vertical" style={{height: '65px', padding: '0 30px'}}>
-                    <h6 className="text-dark m-0"><i className="fa fa-bars mr-2"></i>Categories</h6>
-                    <i className="fa fa-angle-down text-dark"></i>
-                </Link>
-                <nav className="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style={{width: 'calc(100% - 30px)', zIndex: '999'}}>
-                    <div className="navbar-nav w-100">
-                        <div className="nav-item dropdown dropright">
-                            <Link to="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Dresses <i className="fa fa-angle-right float-right mt-1"></i></Link>
-                            <div className="dropdown-menu position-absolute rounded-0 border-0 m-0">
-                                <Link to="" className="dropdown-item">Mens Dresses</Link>
-                                <Link to="" className="dropdown-item">Womens Dresses</Link>
-                                <Link to="" className="dropdown-item">Babys Dresses</Link>
-                            </div>
-                        </div>
-                        <Link to="" className="nav-item nav-link">Shirts</Link>
-                        <Link to="" className="nav-item nav-link">Jeans</Link>
-                        <Link to="" className="nav-item nav-link">Swimwear</Link>
-                        <Link to="" className="nav-item nav-link">Sleepwear</Link>
-                        <Link to="" className="nav-item nav-link">Sportswear</Link>
-                        <Link to="" className="nav-item nav-link">Jumpsuits</Link>
-                        <Link to="" className="nav-item nav-link">Blazers</Link>
-                        <Link to="" className="nav-item nav-link">Jackets</Link>
-                        <Link to="" className="nav-item nav-link">Shoes</Link>
-                    </div>
-                </nav>
-        </div> */}
         <div className="col-lg-3 d-none d-lg-block">
     <Link className="btn d-flex align-items-center justify-content-between bg-primary w-100" data-toggle="collapse" to="#navbar-vertical" style={{height: '65px', padding: '0 30px'}}>
         <h6 className="text-dark m-0"><i className="fa fa-bars mr-2"></i>Categories</h6>

@@ -11,6 +11,7 @@ import Dashboard from './component/admin/Dashboard'
 import Contact from './component/Contact'
 import Profile from './component/user/Profile'
 import Favorites from './component/cart/Favourite'
+import About from './component/About'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/favourites' element={<Favorites/>} />
+      <Route path='/about' element={<About/>} />
     </Routes>
     <Footer/>
     </>

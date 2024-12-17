@@ -57,13 +57,13 @@ function Contact() {
             <div className="col-lg-5 mb-5">
                 <div className="bg-light p-30 mb-30">
                     <iframe style={{width: '100%', height: '250px' , border:'0'}}
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1832.8795787069582!2d77.46518975!3d23.251849649999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4203e1c28add%3A0xce85ece223ab006b!2sIndrapuri%20C%20sector%2C%20Sector%20C%2C%20Indrapuri%2C%20Bhopal%2C%20Madhya%20Pradesh%20462022!5e0!3m2!1sen!2sin!4v1717458867917!5m2!1sen!2sin"
                     frameBorder="0" allowfullscreen="" aria-hidden="false" tabIndex="0"></iframe>
                 </div>
                 <div className="bg-light p-30 mb-3">
-                    <p className="mb-2"><i className="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
-                    <p className="mb-2"><i className="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
-                    <p className="mb-2"><i className="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+                    <p className="mb-2"><i className="fa fa-map-marker-alt text-primary mr-3"></i>Indrapuri , Bhopal</p>
+                    <p className="mb-2"><i className="fa fa-envelope text-primary mr-3"></i>rkrishimartexample@gmail.com</p>
+                    <p className="mb-2"><i className="fa fa-phone-alt text-primary mr-3"></i>+91 8989XXXXXX</p>
                 </div>
             </div>
         </div>

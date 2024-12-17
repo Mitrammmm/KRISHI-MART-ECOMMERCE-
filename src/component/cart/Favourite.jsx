@@ -3,17 +3,28 @@ import { Link } from 'react-router-dom';
 
 const Favorites = () => {
   const [favorites, setFavorites] = useState({
-    Fruits: ['Apples', 'Bananas'],
-    Vegetables: ['Carrots', 'Broccoli'],
-    Dairy: ['Milk', 'Cheese'],
-    Grains: ['Rice', 'Wheat'],
-    Meat: ['Chicken', 'Beef']
+    Fruits: [
+      { name: 'WaterMelon', image: '/images/watermelon.jpg' },
+      { name: 'Bananas', image: '/images/bananas.jpg' }
+    ],
+    Vegetables: [
+      { name: 'Carrots', image: '/images/carrots.jpg' },
+      { name: 'Broccoli', image: '/images/broccoli.jpg' }
+    ],
+    Dairy: [
+      { name: 'Milk', image: '/images/milk.jpg' },
+      { name: 'Cheese', image: '/images/cheese.jpg' }
+    ],
+    Grains: [
+      { name: 'Rice', image: '/images/rice.jpg' },
+      { name: 'Wheat', image: '/images/wheat.jpg' }
+    ]
   });
 
   const removeFavorite = (category, item) => {
     setFavorites({
       ...favorites,
-      [category]: favorites[category].filter(favorite => favorite !== item)
+      [category]: favorites[category].filter(favorite => favorite.name !== item)
     });
   };
 
@@ -24,8 +35,8 @@ const Favorites = () => {
         <div className="row px-xl-5">
           <div className="col-12">
             <nav className="breadcrumb bg-light mb-30">
-              <Link className="breadcrumb-item text-dark" to="#">Home</Link>
-              <Link className="breadcrumb-item text-dark" to="#">Shop</Link>
+              <Link className="breadcrumb-item text-dark" to="/">Home</Link>
+              <Link className="breadcrumb-item text-dark" to="/">Shop</Link>
               <span className="breadcrumb-item active">Favorites</span>
             </nav>
           </div>
@@ -44,15 +55,19 @@ const Favorites = () => {
                   <thead className="thead-dark">
                     <tr>
                       <th>Item</th>
+                      <th></th>
                       <th>Remove</th>
                     </tr>
                   </thead>
                   <tbody className="align-middle">
                     {favorites[category].map(item => (
-                      <tr key={item}>
-                        <td className="align-middle">{item}</td>
+                      <tr key={item.name}>
+                        <td className="align-middle">{item.name}</td>
                         <td className="align-middle">
-                          <button className="btn btn-sm btn-danger" onClick={() => removeFavorite(category, item)}>
+                          <img src={item.image} alt={item.name} style={{ maxWidth: '50px', maxHeight: '50px' }} />
+                        </td>
+                        <td className="align-middle">
+                          <button className="btn btn-sm btn-danger" onClick={() => removeFavorite(category, item.name)}>
                             <i className="fa fa-times"></i>
                           </button>
                         </td>
