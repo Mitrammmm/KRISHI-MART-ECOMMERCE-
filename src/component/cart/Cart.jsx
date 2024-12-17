@@ -35,29 +35,50 @@ function Cart() {
                     </thead>
                     <tbody className="align-middle">
                         <tr>
-                            <td className="align-middle"><img src="/images/mango1.jpg" alt="" style={{width: '50px'}}/>Mangoes</td>
+                            <td className="align-middle"><img src="/images/mango1.jpg" alt="" style={{width: '50px'}}/> Mango</td>
+                            <td className="align-middle">₹60</td>
+                            <td className="align-middle">
+                                <div className="input-group quantity mx-auto" style={{width: '100px'}}>
+                                    <div className="input-group-btn">
+                                        <button className="btn btn-sm btn-primary btn-minus" >
+                                        <i className="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" className="form-control form-control-sm bg-secondary border-0 text-center" value="1"/>
+                                    <div className="input-group-btn">
+                                        <button className="btn btn-sm btn-primary btn-plus">
+                                            <i className="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td className="align-middle">₹120</td>
+                            <td className="align-middle"><button className="btn btn-sm btn-danger"><i className="fa fa-times"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td className="align-middle"><img src="/images/watermelon.jpg" alt="" style={{width: '50px'}}/> Watermelon</td>
+                            <td className="align-middle">₹40</td>
+                            <td className="align-middle">
+                                <div className="input-group quantity mx-auto" style={{width: '100px'}}>
+                                    <div className="input-group-btn">
+                                        <button className="btn btn-sm btn-primary btn-minus" >
+                                        <i className="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" className="form-control form-control-sm bg-secondary border-0 text-center" value="2"/>
+                                    <div className="input-group-btn">
+                                        <button className="btn btn-sm btn-primary btn-plus">
+                                            <i className="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
                             <td className="align-middle">₹80</td>
-                            <td className="align-middle">
-                                <div className="input-group quantity mx-auto" style={{width: '100px'}}>
-                                    <div className="input-group-btn">
-                                        <button className="btn btn-sm btn-primary btn-minus" >
-                                        <i className="fa fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text" className="form-control form-control-sm bg-secondary border-0 text-center" value="1"/>
-                                    <div className="input-group-btn">
-                                        <button className="btn btn-sm btn-primary btn-plus">
-                                            <i className="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td className="align-middle">₹80</td>
                             <td className="align-middle"><button className="btn btn-sm btn-danger"><i className="fa fa-times"></i></button></td>
                         </tr>
                         <tr>
-                            <td className="align-middle"><img src="/images/papad.jpg" alt="" style={{width: '50px'}}/>Papad</td>
-                            <td className="align-middle">₹50</td>
+                            <td className="align-middle"><img src="/images/milk.jpg" alt="" style={{width: '50px'}}/> Milk</td>
+                            <td className="align-middle">₹33</td>
                             <td className="align-middle">
                                 <div className="input-group quantity mx-auto" style={{width: '100px'}}>
                                     <div className="input-group-btn">
@@ -73,12 +94,12 @@ function Cart() {
                                     </div>
                                 </div>
                             </td>
-                            <td className="align-middle">₹50</td>
+                            <td className="align-middle">₹33</td>
                             <td className="align-middle"><button className="btn btn-sm btn-danger"><i className="fa fa-times"></i></button></td>
                         </tr>
                         <tr>
-                            <td className="align-middle"><img src="/images/eggs.jpg" alt="" style={{width: '50px'}}/>Eggs</td>
-                            <td className="align-middle">₹100</td>
+                            <td className="align-middle"><img src="/images/broccoli.jpg" alt="" style={{width: '50px'}}/> Broccoli</td>
+                            <td className="align-middle">₹79</td>
                             <td className="align-middle">
                                 <div className="input-group quantity mx-auto" style={{width: '100px'}}>
                                     <div className="input-group-btn">
@@ -94,51 +115,10 @@ function Cart() {
                                     </div>
                                 </div>
                             </td>
-                            <td className="align-middle">₹100</td>
+                            <td className="align-middle">₹79</td>
                             <td className="align-middle"><button className="btn btn-sm btn-danger"><i className="fa fa-times"></i></button></td>
                         </tr>
-                        <tr>
-                            <td className="align-middle"><img src="/images/flower.jpg" alt="" style={{width: '50px'}}/>Roses</td>
-                            <td className="align-middle">₹100</td>
-                            <td className="align-middle">
-                                <div className="input-group quantity mx-auto" style={{width: '100px'}}>
-                                    <div className="input-group-btn">
-                                        <button className="btn btn-sm btn-primary btn-minus" >
-                                        <i className="fa fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text" className="form-control form-control-sm bg-secondary border-0 text-center" value="1"/>
-                                    <div className="input-group-btn">
-                                        <button className="btn btn-sm btn-primary btn-plus">
-                                            <i className="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td className="align-middle">₹100</td>
-                            <td className="align-middle"><button className="btn btn-sm btn-danger"><i className="fa fa-times"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td className="align-middle"><img src="/images/mangopickels.jpg" alt="" style={{width: '50px'}}/> pickels</td>
-                            <td className="align-middle">₹199</td>
-                            <td className="align-middle">
-                                <div className="input-group quantity mx-auto" style={{width: '100px'}}>
-                                    <div className="input-group-btn">
-                                        <button className="btn btn-sm btn-primary btn-minus" >
-                                        <i className="fa fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text" className="form-control form-control-sm bg-secondary border-0 text-center" value="1"/>
-                                    <div className="input-group-btn">
-                                        <button className="btn btn-sm btn-primary btn-plus">
-                                            <i className="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td className="align-middle">₹199</td>
-                            <td className="align-middle"><button className="btn btn-sm btn-danger"><i className="fa fa-times"></i></button></td>
-                        </tr>
+ 
                     </tbody>
                 </table>
             </div>
@@ -156,17 +136,17 @@ function Cart() {
                     <div className="border-bottom pb-2">
                         <div className="d-flex justify-content-between mb-3">
                             <h6>Subtotal</h6>
-                            <h6>₹429</h6>
+                            <h6>₹332</h6>
                         </div>
                         <div className="d-flex justify-content-between">
                             <h6 className="font-weight-medium">Shipping</h6>
-                            <h6 className="font-weight-medium">₹29</h6>
+                            <h6 className="font-weight-medium">₹30</h6>
                         </div>
                     </div>
                     <div className="pt-2">
                         <div className="d-flex justify-content-between mt-2">
                             <h5>Total</h5>
-                            <h5>₹458</h5>
+                            <h5>₹362</h5>
                         </div>
                         <button className="btn btn-block btn-primary font-weight-bold my-3 py-3">Proceed To Checkout</button>
                     </div>

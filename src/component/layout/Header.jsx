@@ -41,7 +41,7 @@ function Header() {
                             <div className="nav-item dropdown">
                                 <Link to="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Contact Us <i className="fa fa-angle-down mt-1"></i></Link>
                                 <div className="dropdown-menu bg-primary rounded-0 border-0 m-0">
-                                    <Link className='dropdown-item' to='/cart'>FAQs</Link>
+                                    <Link className='dropdown-item' to=''>FAQs</Link>
                                     {/* <Link className='dropdown-item' to='/checkout'>Help</Link> */}
                                     <Link className='dropdown-item' to='/contact'>Contact Us</Link>
                                 </div>
